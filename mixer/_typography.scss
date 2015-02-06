@@ -1,0 +1,108 @@
+body {
+    @include font-feature-settings("kern", "liga", "pnum");
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-family-body;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $color-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
+    line-height: $base-heading-line-height;
+    margin: 0 0 $base-spacing / 2 0;
+    text-rendering: optimizeLegibility;
+    // Fix the character spacing for headings
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+p {
+    margin: ($base-spacing / 2) 0;
+}
+
+a {
+    color: $color-font-link;
+    text-decoration: none;
+
+    &:hover, &:active, &:focus {
+        color: shade($color-font-link, 20%);
+    }
+
+    &:active, &:focus {
+        outline: none;
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: shade($color-light, 10%);
+    margin: $base-spacing 0;
+}
+
+blockquote {
+    border-left: 3px solid shade($color-light, 20%);
+    color: tint($color-dark, 30%);
+    margin: $base-spacing 0;
+    padding-left: $base-spacing;
+
+    cite {
+        display: block;
+        font-style: italic;
+
+        &:before {
+            content: "\2014";
+            margin-right: $base-spacing / 2;
+        }
+    }
+}
+
+cite {
+    color: tint($color-dark, 25);
+    font-style: italic;
+    display: block;
+
+    &:before {
+        content: "\2014";
+        margin-right: $base-spacing / 2;
+    }
+}
+
+img,
+picture {
+    margin: 0;
+    max-width: 100%;
+}
+
+code, pre {
+    background: shade($color-light, 10%);
+}
+
+pre {
+    margin: $base-spacing 0;
+    padding-left: $base-spacing;
+    border-radius: $base-border-radius;
+}

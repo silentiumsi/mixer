@@ -1,0 +1,34 @@
+table {
+	border-collapse: collapse;
+	margin: $base-spacing 0;
+	table-layout: fixed;
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+	padding: $base-spacing / 2;
+	text-align: left;
+	background: shade($color-light, 4%);
+	border: 1px solid shade($color-light, 10%);
+}
+
+td {
+	padding: $base-spacing / 2;
+	border: 1px solid shade($color-light, 10%);
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+caption {
+font-weight: bold;
+	padding: $base-spacing / 2;
+	text-align: left;
+	background: shade($color-light, 4%);
+	border: 1px solid shade($color-light, 10%);
+	border-bottom: none;
+}

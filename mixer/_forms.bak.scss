@@ -1,0 +1,48 @@
+fieldset {
+    margin: ($base-spacing / 2) 0;
+    padding: $base-spacing;
+    border-radius: $base-border-radius;
+
+    legend {
+        padding: 0 $base-spacing / 2;
+    }
+}
+
+input,
+label,
+select {
+    display: block;
+}
+
+label {
+    font-weight: bold;
+    margin: ($base-spacing / 2) 0;
+}
+
+textarea,
+#{$all-text-inputs},
+select[multiple=multiple] {
+    @include transition(border-color);
+    border: 1px solid shade($color-light, 5%);
+    margin-bottom: $base-spacing / 2;
+    width: 100%;
+    padding: $base-spacing / 2;
+    border-radius: $base-border-radius;
+    outline: none;
+
+    &:hover {
+        border-color: shade($color-light, 15%);
+    }
+
+    &:focus {
+        border-color: $color-info;
+
+        &:invalid {
+            border-color: $color-error;
+        }
+
+        &:valid {
+            border-color: $color-success;
+        }
+    }
+}

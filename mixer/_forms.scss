@@ -1,38 +1,46 @@
+/*============================
+=            Form            =
+============================*/
+
+form {
+    font-family: $font-family-secondary;
+}
+
+/*================================
+=            Fieldset            =
+================================*/
+
 fieldset {
-    margin: ($base-spacing / 2) 0;
+    margin: 0 0 $base-spacing 0;
     padding: $base-spacing;
     border-radius: $base-border-radius;
 
     legend {
-        padding: 0 $base-spacing / 2;
+        padding: 0 ($base-spacing / 2);
     }
 }
 
-input,
-label,
-select {
+/*==============================
+=            Labels            =
+==============================*/
+
+label {
     display: block;
 }
 
-label {
-    font-weight: bold;
-    margin: ($base-spacing / 2) 0;
-}
+/*===================================
+=            Text Inputs            =
+===================================*/
 
-textarea,
-#{$all-text-inputs},
-
-select[multiple=multiple] {
-    @include transition(border-color);
-    border: 1px solid shade($color-light, 5%);
-    margin-bottom: $base-spacing / 2;
-    width: 100%;
+#{$all-text-inputs} {
+    border: 1px solid $color-border;
     padding: $base-spacing / 2;
     border-radius: $base-border-radius;
     outline: none;
+    width: 100%;
 
     &:hover {
-        border-color: shade($color-light, 15%);
+        border-color: shade($color-border, 20%);
     }
 
     &:focus {
@@ -45,5 +53,67 @@ select[multiple=multiple] {
         &:valid {
             border-color: $color-success;
         }
+    }
+}
+
+/*======================================
+=            Specific Input            =
+======================================*/
+
+input {
+    max-width: 100%;
+    margin: 0 0 $base-spacing 0;
+}
+
+input[type=color] {
+    height: 50px;
+}
+
+input[type=range] {
+    width: 100%;
+    padding: ($base-spacing / 2) 0;
+}
+
+input[type=file] {
+    width: 100%;
+    padding: ($base-spacing / 2) 0;
+}
+
+select {
+    border: 1px solid $color-border;
+    background: $color-light;
+    width: 100%;
+    padding: $base-spacing / 2;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: $base-spacing;
+}
+
+/*===============================
+=            Buttons            =
+===============================*/
+
+input[type=submit],
+input[type=reset] {
+    @extend .button;
+    width: 100%;
+
+    &.button-error {
+        @extend .button-error;
+    }
+
+    &.button-success {
+        @extend .button-success;
+    }
+
+    &.button-warning {
+        @extend .button-warning;
+    }
+
+    &.button-info {
+        @extend .button-info;
     }
 }

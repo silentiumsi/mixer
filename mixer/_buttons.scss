@@ -1,70 +1,86 @@
+/*===================================
+=            Base Button            =
+===================================*/
+
 button,
 .button {
-  -webkit-font-smoothing: antialiased;
-  background-color: shade($color-light, 5%);
-  border-radius: $base-border-radius;
-  color: $color-dark;
-  display: inline-block;
-  line-height: 1;
-  font-weight: bold;
-  padding: $base-spacing;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  margin: $base-spacing / 2 0;
-  font-family: $font-family-secondary;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 0 $base-spacing 0;
+    color: $color-dark;
+    background: $color-light;
+    border: 1px solid $color-border;
+    padding: ($base-spacing / 2);
+    border-radius: $base-border-radius;
+    font-family: $font-family-secondary;
 
-  &:hover {
-    background-color: shade($color-light, 10%);  
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-
-  &.success {
-    background-color: $color-success;
-    color: $color-light;
-
-    &:hover {
-      background-color: shade($color-success, 10%); 
+    &:hover, 
+    &:focus {
+    	outline: none;
+    	background-color: $color-border;
     }
-  }
 
-  &.error {
-    background-color: $color-error;
-    color: $color-light;
-  
-    &:hover {
-      background-color: shade($color-error, 10%); 
-    }
-  }
-
-  &.warning {
-    background-color: $color-warning;
-    color: $color-light;
-
-    &:hover {
-      background-color: shade($color-warning, 10%); 
-    }
-  }
-
-  &.info {
-    background-color: $color-info;
-    color: $color-light;
-
-    &:hover {
-      background-color: shade($color-info, 10%); 
-    }
-  }
-
+    &:disabled {
+    	cursor: not-allowed;
+    	opacity: 0.5;
+  	}
 }
 
-%large {
-  padding: $base-spacing * 1.5;
+/*=======================================
+=            Color Modifiers            =
+=======================================*/
+
+.button-success {
+	background-color: $color-success; 
+	border: none;
+
+	&:hover,
+	&:focus {
+		background-color: shade($color-success, 10%); 
+	}
 }
 
-%small {
-  padding: $base-spacing / 2;
+.button-error {
+	background-color: $color-error; 
+	border: none;
+
+	&:hover,
+	&:focus {
+		background-color: shade($color-error, 10%); 
+	}
+}
+
+.button-warning {
+	background-color: $color-warning; 
+	border: none;
+
+	&:hover,
+	&:focus {
+		background-color: shade($color-warning, 10%); 
+	}
+}
+
+.button-info {
+	background-color: $color-info; 
+	border: none;
+
+	&:hover,
+	&:focus {
+		background-color: shade($color-info, 10%); 
+	}
+}
+
+/*======================================
+=            Size Modifiers            =
+======================================*/
+
+.button-large {
+	font-size: 1.2em;
+}
+
+.button-small {
+	font-size: 0.8em;
 }

@@ -1,380 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Mixer</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-
-<body>
-
-    <nav>
-        <ul class="blank inline">
-            <li><a href="#colors">colors</a></li>
-            <li><a href="#typography">typography</a></li>
-            <li><a href="#lists">lists</a></li>
-            <li><a href="#tables">tables</a></li>
-            <li><a href="#forms">forms</a></li>
-            <li><a href="#buttons">buttons</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero">
-        <h1>Mixer</h1>
-        <p class="subheading">A launchpad for a quick and structured beginning to Sass projects depending on <a href="http://bourbon.io">Bourbon</a>.
-        </p>
-    </header>
-
-    <div class="about">
-        <p>My main aim was to create a solid base to quickly begin projects depending on Bourbon. I aimed to keep it as low level as possible, not including components, such as footers, and using as many variables as are needed to make customization as easy and painless as possible.</p>
-    </div>
-
-    <div class="download" id="download">
-        <a href="#" class="button error">Download or Fork</a>
-    </div>
-
-    <div class="medium-wrap">
-
-        <section class="colors" id="colors">
-
-            <h2 class="demo">Default colors</h2>
-
-            <ul class="colors-list">
-                <li class="primary">primary</li>
-                <li class="secondary">secondary</li>
-                <li class="dark">dark</li>
-                <li class="light">light</li>
-                <li class="success">success</li>
-                <li class="error">error</li>
-                <li class="warning">warning</li>
-                <li class="info">info</li>
-            </ul>
-
-        </section>
-
-    </div>
-
-    <section class="typography" id="typography">
-
-        <h2 class="demo">Typography</h2>
-
-        <h1>Heading one</h1>
-        <h2>Heading two</h2>
-        <h3>Heading three</h3>
-        <h4>Heading four</h4>
-        <h5>Heading five</h5>
-        <h6>Heading six</h6>
-
-        <hr class="large">
-
-        <p>Lorem ipsum <a href="#0">dolor sit amet</a>, consectetur <em>adipisicing elit</em>. Quod perferendis ut dolorem consectetur <strong>molestias vel</strong> veritatis odit beatae, quidem ullam soluta temporibus sit sunt mollitia!</p>
-
-        <p>Officiis minima dolorem quidem veniam
-            <mark>atque cum</mark> assumenda, debitis repellendus! Veritatis odio nulla <code>architecto sit id quod</code>, sed dolorum cum magni quibusdam, nisi reiciendis ullam!</p>
-
-        <hr class="large">
-
-        <blockquote>This is a blockquote. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure beatae autem distinctio voluptate vero dolorum.
-            <cite>I am defined inside the blockquote</cite>
-        </blockquote>
-
-        <hr class="large">
-
-        <p>Code can be <code>inserted</code> inline.</p>
-
-        <p><code>
-<pre>
-
-var explain = function() {
-    console.log('You can also define code blocks!');
-}
-
-</pre>
-       	</code>
-        </p>
-
-    </section>
-
-    <div class="medium-wrap">
-
-        <section class="list" id="lists">
-            <h2 class="demo">Lists</h2>
-
-            <h3 class="demo">Unordered list</h3>
-
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Deserunt voluptate qui vel optio.</li>
-                <ul>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Consequuntur eum, dolorem.</li>
-                </ul>
-                <li>Optio officiis, in quam et.</li>
-                <li>Atque, ipsa, iste. Similique, sequi.</li>
-                <li>Minima qui, distinctio quam iure.</li>
-            </ul>
-
-            <hr>
-
-            <h3 class="demo">Blank list</h3>
-
-            <ul class="blank">
-                <li>Lorem ipsum dolor.</li>
-                <li>Deserunt voluptate qui.</li>
-                <ul>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Consequuntur eum.</li>
-                </ul>
-                <li>Optio officiis.</li>
-                <li>Atque, ipsa, iste.</li>
-                <li>Minima qui, distinctio.</li>
-            </ul>
-
-            <hr>
-
-            <h3 class="demo">Ordered list</h3>
-
-            <ol>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Deserunt voluptate qui vel optio.</li>
-                <ol>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Consequuntur eum, dolorem.</li>
-                </ol>
-                <li>Optio officiis, in quam et.</li>
-                <li>Atque, ipsa, iste. Similique, sequi.</li>
-                <li>Minima qui, distinctio quam iure.</li>
-            </ol>
-
-            <hr>
-
-            <h3 class="demo">Inline list</h3>
-
-            <ul class="inline">
-                <li>Lorem</li>
-                <li>Fugit</li>
-                <li>Aspernatur</li>
-            </ul>
-
-            <hr>
-
-            <h3 class="demo">Definition list</h3>
-
-            <dl>
-                <dt>Lorem ipsum dolor.
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed deleniti accusantium enim pariatur dolorem eveniet?</dd>
-                </dt>
-                <dt>Vero, numquam nihil.
-                    <dd>Hic, consectetur, modi. Totam sit ut ipsa quas explicabo, officiis dolorum natus excepturi rerum quisquam?</dd>
-                </dt>
-            </dl>
-
-        </section>
-
-    </div>
-
-    <section class="tables" id="tables">
-
-        <h2 class="demo">Tables</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Header content 1</th>
-                    <th>Header content 2</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <td>Footer content 1</td>
-                    <td>Footer content 2</td>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <td>Body content 1</td>
-                    <td>Body content 2</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <hr>
-
-        <table>
-            <caption>Awesome caption</caption>
-            <tr>
-                <td>Awesome data</td>
-            </tr>
-        </table>
-
-    </section>
-
-    <div class="medium-wrap">
-
-        <section class="forms" id="forms">
-
-            <h2 class="demo">Forms</h2>
-
-            <form id="register">
-
-                <fieldset>
-                    <legend>Personal details</legend>
-                    <div>
-                        <label>First Name
-                            <input id="given-name" name="given-name" type="text" placeholder="First name only" required>
-                        </label>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mixer</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <section id="buttons" class="section-buttons">
+                <h1 class="section-header">Buttons</h1>
+                
+                <div class="span-third">
+                    <p class="section-header-sub">Regular Buttons</p>
+                    <div class="row">
+                        <button>button</button>
+                        <button disabled>disabled</button>
                     </div>
-                    <div>
-                        <label>Last Name
-                            <input id="family-name" name="family-name" type="text" placeholder="Last name only" required>
-                        </label>
+                    <div class="row">
+                        <button class="button-success">success</button>
+                        <button class="button-success" disabled>success</button>
                     </div>
-                    <div>
-                        <label>Date of Birth
-                            <input id="dob" name="dob" type="date" required>
-                        </label>
+                    <div class="row">
+                        <button class="button-error">error</button>
+                        <button class="button-error" disabled>error</button>
                     </div>
-                    <div>
-                        <label>Email
-                            <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-                        </label>
+                    <div class="row">
+                        <button class="button-warning">warning</button>
+                        <button class="button-warning" disabled>warning</button>
                     </div>
-                    <div>
-                        <label>URL
-                            <input id="url" name="url" type="url" placeholder="http://mysite.com">
-                        </label>
+                    <div class="row">
+                        <button class="button-info">info</button>
+                        <button class="button-info" disabled>info</button>
                     </div>
-                    <div>
-                        <label>Telephone
-                            <input id="phone" name="phone" type="tel" placeholder="Eg. +447000 000000" required>
-                        </label>
+                </div>
+                <div class="span-third">
+                    <p class="section-header-sub">Large Buttons</p>
+                    <div class="row">
+                        <button class="button-large">button</button>
+                        <button disabled class="button-large">disabled</button>
                     </div>
-                    <div>
-                        <label>Shoesize
-                            <input id="shoes" name="shoes" type="number" min="5" max="18" step="0.5" value="9">
-                        </label>
+                    <div class="row">
+                        <button class="button-success button-large">success</button>
+                        <button class="button-success button-large" disabled>success</button>
                     </div>
-                    <div>
-                        <label>Flying Skill level (1 low - 100 high)
-                            <input id="skill" name="skill" type="range" min="1" max="100" value="0">
-                            <output name="output" onforminput="value=a.value">0</output>
-                        </label>
+                    <div class="row">
+                        <button class="button-error button-large">error</button>
+                        <button class="button-error button-large" disabled>error</button>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Billing address</legend>
-                    <div>
-                        <label>Address
-                            <textarea id="address" name="address" rows=5 required></textarea>
-                        </label>
+                    <div class="row">
+                        <button class="button-warning button-large">warning</button>
+                        <button class="button-warning button-large" disabled>warning</button>
                     </div>
-                    <div>
-                        <label>Post code
-                            <input id="postCode" name="postCode" type="text" required>
-                        </label>
+                    <div class="row">
+                        <button class="button-info button-large">info</button>
+                        <button class="button-info button-large" disabled>info</button>
                     </div>
-                    <div>
-                        <label>Country
-                            <input id="country" name="country" list="country-names" type="text" required>
-                            <datalist id="country-names">
-                                <option label="England" value="England"></option>
-                                <option label="Northern Ireland" value="Northern Ireland"></option>
-                                <option label="Ireland" value="Ireland"></option>
-                                <option label="Scotland" value="Scotland"></option>
-                                <option label="Wales" value="Wales"></option>
-                            </datalist>
-                        </label>
+                </div>
+                <div class="span-third">
+                    <p class="section-header-sub">Small Buttons</p>
+                    <div class="row">
+                        <button class="button-small">button</button>
+                        <button disabled class="button-small">disabled</button>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Card details</legend>
-                    <fieldset>
-                        <legend>Card type</legend>
-                        <div class="card-type">
-                            <input id="visa" name="cardtype" type="radio">
-                            <label for="visa">VISA</label>
-                            <input id="mastercard" name="cardtype" type="radio">
-                            <label for="mastercard">Mastercard</label>
-                            <input id="amex" name="cardtype" type="radio">
-                            <label for="amex">AMEX</label>
-                        </div>
-                    </fieldset>
-                    <div>
-                        <label>Name
-                            <input id="cardName" name="cardName" type="text" placeholder="Name as it appears on your card" required>
-                        </label>
+                    <div class="row">
+                        <button class="button-success button-small">success</button>
+                        <button class="button-success button-small" disabled>success</button>
                     </div>
-                    <div>
-                        <label>Card number
-                            <input id="cardNo" name="cardNo" type="number" required title="The sixteen digit number across the middle of your card.">
-                        </label>
+                    <div class="row">
+                        <button class="button-error button-small">error</button>
+                        <button class="button-error button-small" disabled>error</button>
                     </div>
-                    <div>
-                        <label>Security code
-                            <input id="security" name="security" type="number" required pattern="[0-9]{3}" title="The last three digits on the back of your card.">
-                        </label>
+                    <div class="row">
+                        <button class="button-warning button-small">warning</button>
+                        <button class="button-warning button-small" disabled>warning</button>
                     </div>
-                    <div>
-                        <label>Expiry Date
-                            <input id="expiry" name="expiry" type="month">
-                        </label>
+                    <div class="row">
+                        <button class="button-info button-small">info</button>
+                        <button class="button-info button-small" disabled>info</button>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <button class="info" type=submit>Place Order</button>
-                    </div>
-                </fieldset>
-            </form>
-
-
-        </section>
-
-    </div>
-
-    <section class="buttons">
-    	
-    	<h2 class="demo" id="buttons">Buttons</h2>
-
-    	<button>Default Button</button>
-    	<button class="success">Success Button</button>
-    	<button class="error">Error Button</button>
-    	<button class="warning">Warning Button</button>
-    	<button class="info">Info Button</button>
-
-    	<hr>
-
-    	<button class="large">Large Button</button>
-    	<button class="large success">Large Success Button</button>
-    	<button class="large error">Large Error Button</button>
-    	<button class="large warning">Large Warning Button</button>
-    	<button class="large info">Large Info Button</button>
-
-    	<hr>
-
-    	<button class="small">Small Button</button>
-    	<button class="small success">Small Success Button</button>
-    	<button class="small error">Small Error Button</button>
-    	<button class="small warning">Small Warning Button</button>
-    	<button class="small info">Small Info Button</button>
-
-    </section>
-
-    <div class="medium-wrap">
-
-    <section class="todo">
-    	<h2 class="demo">Get involved</h2>
-    	<p>If there is anything else you think should be added, or you think you can improve the existing code. I welcome pull requests. Get involved!</p>
-    </section>
-
-    </div>
-
-    <footer>
-    	<p>Built with &#x2764; by <a href="http://simonmckeon.github.io">Simon McKeon</a>.</p>
-    </footer>
-
-
-</body>
-
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

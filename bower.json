@@ -1,0 +1,21 @@
+{
+  "name": "mixer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/SimonMckeon/mixer",
+  "authors": [
+    "SimonMcKeon <simon.mckeon.dev@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.0",
+    "susy": "~2.2.2"
+  }
+}

@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic);
+
 // Colors
 $color-primary: #e74c3c;
 $color-secondary: #2980b9;
@@ -9,9 +11,11 @@ $color-error: #e74c3c;
 $color-warning: #f39c12;
 $color-info: #2980b9;
 
+$color-border: shade($color-light, 10%);
+
 // Typography
-$font-family-primary: serif;
-$font-family-secondary: sans-serif;
+$font-family-primary: 'Droid Serif', serif;
+$font-family-secondary: 'Droid Sans', sans-serif;
 
 $font-family-body: $font-family-primary;
 $font-family-heading: $font-family-secondary;

@@ -1,19 +1,30 @@
+/*============================
+=            Base            =
+============================*/
+
 body {
-    @include font-feature-settings("kern", "liga", "pnum");
-    -webkit-font-smoothing: antialiased;
-    font-family: $font-family-body;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    color: $color-dark;
+	@include font-feature-settings("kern", "liga", "pnum");
+	-webkit-font-smoothing: antialiased;
+	font-family: $font-family-body;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-heading;
-    line-height: $base-heading-line-height;
-    margin: 0 0 $base-spacing / 2 0;
-    text-rendering: optimizeLegibility;
-    // Fix the character spacing for headings
-    font-weight: $base-heading-weight;
+/*================================
+=            Headings            =
+================================*/
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: $font-family-heading;
+	line-height: $base-heading-line-height;
+	text-rendering: optimizeLegibility;
+	font-weight: $base-heading-weight;
+	margin: ($base-spacing * 0.2) 0 ($base-spacing * 0.5) 0;
 }
 
 h1 {
@@ -40,74 +51,62 @@ h6 {
     font-size: $h6-font-size;
 }
 
-.subheader {
-    color: tint($color-dark, 40%);
-}
-
-p {
-    margin: ($base-spacing / 2) 0;
-}
+/*==============================
+=            Anchor            =
+==============================*/
 
 a {
-    color: $color-font-link;
-    text-decoration: none;
+	text-decoration: none;
+	color: $color-font-link;
 
-    &:hover, &:active, &:focus {
-        color: shade($color-font-link, 20%);
-    }
-
-    &:active, &:focus {
-        outline: none;
-    }
+	&:hover, &:active, &:focus {
+		outline: none;
+		color: shade($color-font-link, 20%);
+	}
 }
 
-hr {
-    border: none;
-    height: 1px;
-    background: shade($color-light, 10%);
-    margin: $base-spacing 0;
-}
+/*=========================================
+=            Blockquote & Cite            =
+=========================================*/
 
 blockquote {
-    border-left: 3px solid shade($color-light, 20%);
-    color: tint($color-dark, 30%);
-    margin: $base-spacing 0;
-    padding-left: $base-spacing;
+	margin: $base-spacing 0;
+	color: tint($color-dark, 30%);
+	padding: ($base-spacing / 2) 0 ($base-spacing / 2) $base-spacing;
+	border-left: 3px solid $color-border;
 
-    cite {
-        display: block;
-        font-style: italic;
+	cite {
+		display: block;
+		font-style: italic;
 
-        &:before {
-            content: "\2014";
-            margin-right: $base-spacing / 2;
-        }
-    }
+		&:before {
+			content: "\2014";
+			margin: 0 ($base-spacing / 2) 0 0;
+		}		
+	}
 }
 
-cite {
-    color: tint($color-dark, 25);
-    font-style: italic;
-    display: block;
-
-    &:before {
-        content: "\2014";
-        margin-right: $base-spacing / 2;
-    }
-}
-
-img,
-picture {
-    margin: 0;
-    max-width: 100%;
-}
+/*==================================
+=            Code & Pre            =
+==================================*/
 
 code, pre {
-    background: shade($color-light, 10%);
+	background: $color-border;
 }
 
 pre {
+	margin: $base-spacing 0;
+	padding: ($base-spacing / 2) $base-spacing;
+	border-radius: $base-border-radius;
+}
+
+/*==========================
+=            hr            =
+==========================*/
+
+hr {
+	border: none;
+    height: 1px;
+    background: $color-border;
     margin: $base-spacing 0;
-    padding-left: $base-spacing;
-    border-radius: $base-border-radius;
 }

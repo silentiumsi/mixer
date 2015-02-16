@@ -1,19 +1,8 @@
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic);
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block; }
 
 audio:not([controls]) {
@@ -29,11 +18,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
   font-family: sans-serif; }
 
 body {
@@ -73,8 +58,7 @@ h6 {
 abbr[title] {
   border-bottom: 1px dotted; }
 
-b,
-strong {
+b, strong {
   font-weight: bold; }
 
 dfn {
@@ -84,10 +68,7 @@ mark {
   background: #ff0;
   color: #000; }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
@@ -106,8 +87,7 @@ q:before, q:after {
 small {
   font-size: 80%; }
 
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -138,10 +118,7 @@ legend {
   padding: 0;
   white-space: normal; }
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
@@ -150,19 +127,14 @@ textarea {
 button, input {
   line-height: normal; }
 
-button,
-select {
+button, select {
   text-transform: none; }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-button[disabled],
-input[disabled] {
+button[disabled], input[disabled] {
   cursor: default; }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
@@ -188,40 +160,56 @@ input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
+/*====================================
+=            Font Imports            =
+====================================*/
+/*==============================
+=            Colors            =
+==============================*/
+/*==================================
+=            Typography            =
+==================================*/
+/*===================================
+=            Base Sizing            =
+===================================*/
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
   -moz-font-feature-settings: "kern", "liga", "pnum";
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  font-family: serif;
+  font-family: 'Droid Serif', serif;
   font-size: 1em;
   line-height: 1.5;
   color: #212121; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   line-height: 1.2;
   margin: 0 0 0.75em 0;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  font-weight: 400; }
 
 h1 {
-  font-size: 3.5em; }
+  font-size: 3.051em; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 2.441em; }
 
 h3 {
-  font-size: 2.5em; }
+  font-size: 1.953em; }
 
 h4 {
-  font-size: 2em; }
+  font-size: 1.563em; }
 
 h5 {
-  font-size: 1.5em; }
+  font-size: 1.25em; }
 
 h6 {
   font-size: 1em; }
+
+.subheader {
+  color: #797979; }
 
 p {
   margin: 0.75em 0; }
@@ -260,8 +248,7 @@ cite {
     content: "\2014";
     margin-right: 0.75em; }
 
-img,
-picture {
+img, picture {
   margin: 0;
   max-width: 100%; }
 
@@ -278,19 +265,6 @@ ul, ol {
   padding: 0; }
   ul ul, ul ol, ol ul, ol ol {
     margin: 0 0 0 1.5em; }
-
-.blank {
-  list-style-type: none; }
-  .blank ul, .blank ol {
-    list-style-type: none; }
-
-.inline > li {
-  display: inline-block;
-  margin: 0 1.5em; }
-  .inline > li:first-child {
-    margin-left: 0; }
-  .inline > li:last-child {
-    margin-right: 0; }
 
 dl {
   margin: 1.5em 0; }
@@ -317,9 +291,7 @@ td {
   padding: 0.75em;
   border: 1px solid #e5e5e5; }
 
-tr,
-td,
-th {
+tr, td, th {
   vertical-align: middle; }
 
 caption {
@@ -330,265 +302,188 @@ caption {
   border: 1px solid #e5e5e5;
   border-bottom: none; }
 
+/*============================
+=            Form            =
+============================*/
+form {
+  font-family: 'Droid Sans', sans-serif; }
+
+/*================================
+=            Fieldset            =
+================================*/
 fieldset {
-  margin: 0.75em 0;
+  margin: 0 0 1.5em 0;
   padding: 1.5em;
   border-radius: 3px; }
   fieldset legend {
     padding: 0 0.75em; }
 
-input,
-label,
-select {
+/*==============================
+=            Labels            =
+==============================*/
+label {
   display: block; }
 
-label {
-  font-weight: bold;
-  margin: 0.75em 0; }
-
-textarea,
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
-select[multiple=multiple] {
-  -webkit-transition: border-color;
-  -moz-transition: border-color;
-  transition: border-color;
-  border: 1px solid #f2f2f2;
-  margin-bottom: 0.75em;
-  width: 100%;
+/*===================================
+=            Text Inputs            =
+===================================*/
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea {
+  border: 1px solid #e5e5e5;
   padding: 0.75em;
   border-radius: 3px;
-  outline: none; }
-  textarea:hover,
-  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
-  select[multiple=multiple]:hover {
-    border-color: #d8d8d8; }
-  textarea:focus,
-  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
-  select[multiple=multiple]:focus {
+  outline: none;
+  width: 100%; }
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover {
+    border-color: #b7b7b7; }
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus {
     border-color: #2980b9; }
-    textarea:focus:invalid,
-    input[type="email"]:focus:invalid, input[type="number"]:focus:invalid, input[type="password"]:focus:invalid, input[type="search"]:focus:invalid, input[type="tel"]:focus:invalid, input[type="text"]:focus:invalid, input[type="url"]:focus:invalid, input[type="color"]:focus:invalid, input[type="date"]:focus:invalid, input[type="datetime"]:focus:invalid, input[type="datetime-local"]:focus:invalid, input[type="month"]:focus:invalid, input[type="time"]:focus:invalid, input[type="week"]:focus:invalid,
-    select[multiple=multiple]:focus:invalid {
+    input[type="color"]:focus:invalid, input[type="date"]:focus:invalid, input[type="datetime"]:focus:invalid, input[type="datetime-local"]:focus:invalid, input[type="email"]:focus:invalid, input[type="month"]:focus:invalid, input[type="number"]:focus:invalid, input[type="password"]:focus:invalid, input[type="search"]:focus:invalid, input[type="tel"]:focus:invalid, input[type="text"]:focus:invalid, input[type="time"]:focus:invalid, input[type="url"]:focus:invalid, input[type="week"]:focus:invalid, textarea:focus:invalid {
       border-color: #e74c3c; }
-    textarea:focus:valid,
-    input[type="email"]:focus:valid, input[type="number"]:focus:valid, input[type="password"]:focus:valid, input[type="search"]:focus:valid, input[type="tel"]:focus:valid, input[type="text"]:focus:valid, input[type="url"]:focus:valid, input[type="color"]:focus:valid, input[type="date"]:focus:valid, input[type="datetime"]:focus:valid, input[type="datetime-local"]:focus:valid, input[type="month"]:focus:valid, input[type="time"]:focus:valid, input[type="week"]:focus:valid,
-    select[multiple=multiple]:focus:valid {
+    input[type="color"]:focus:valid, input[type="date"]:focus:valid, input[type="datetime"]:focus:valid, input[type="datetime-local"]:focus:valid, input[type="email"]:focus:valid, input[type="month"]:focus:valid, input[type="number"]:focus:valid, input[type="password"]:focus:valid, input[type="search"]:focus:valid, input[type="tel"]:focus:valid, input[type="text"]:focus:valid, input[type="time"]:focus:valid, input[type="url"]:focus:valid, input[type="week"]:focus:valid, textarea:focus:valid {
       border-color: #2ecc71; }
 
-button,
-.button {
-  -webkit-font-smoothing: antialiased;
-  background-color: #f2f2f2;
-  border-radius: 3px;
-  color: #212121;
-  display: inline-block;
-  line-height: 1;
-  font-weight: bold;
-  padding: 1.5em;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  margin: 0.75em 0;
-  font-family: sans-serif; }
-  button:hover,
-  .button:hover {
-    background-color: #e5e5e5; }
-  button:disabled,
-  .button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5; }
-  button.success,
-  .button.success {
-    background-color: #2ecc71;
-    color: #ffffff; }
-    button.success:hover,
-    .button.success:hover {
-      background-color: #29b765; }
-  button.error,
-  .button.error {
-    background-color: #e74c3c;
-    color: #ffffff; }
-    button.error:hover,
-    .button.error:hover {
-      background-color: #cf4436; }
-  button.warning,
-  .button.warning {
-    background-color: #f39c12;
-    color: #ffffff; }
-    button.warning:hover,
-    .button.warning:hover {
-      background-color: #da8c10; }
-  button.info,
-  .button.info {
-    background-color: #2980b9;
-    color: #ffffff; }
-    button.info:hover,
-    .button.info:hover {
-      background-color: #2473a6; }
+/*======================================
+=            Specific Input            =
+======================================*/
+input {
+  max-width: 100%;
+  margin: 0 0 1.5em 0; }
 
-button.large {
-  padding: 2.25em; }
+input[type=color] {
+  height: 50px; }
 
-button.small {
+input[type=range] {
+  width: 100%;
+  padding: 0.75em 0; }
+
+input[type=file] {
+  width: 100%;
+  padding: 0.75em 0; }
+
+select {
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  width: 100%;
   padding: 0.75em; }
 
-* {
+textarea {
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 1.5em; }
+
+/*===============================
+=            Buttons            =
+===============================*/
+input[type=submit], input[type=reset] {
+  width: 100%; }
+
+/*===================================
+=            Base Button            =
+===================================*/
+button, .button, input[type=submit], input[type=reset] {
+  display: inline-block;
+  line-height: 1;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 0 1.5em 0;
+  color: #212121;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 0.75em;
+  border-radius: 3px;
+  font-family: 'Droid Sans', sans-serif; }
+  button:hover, button:focus, .button:hover, input[type=submit]:hover, input[type=reset]:hover, .button:focus, input[type=submit]:focus, input[type=reset]:focus {
+    outline: none;
+    background-color: #e5e5e5; }
+  button:disabled, .button:disabled, input[type=submit]:disabled, input[type=reset]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/*=======================================
+=            Color Modifiers            =
+=======================================*/
+.button-success, input[type=submit].button-success, input[type=reset].button-success {
+  background-color: #2ecc71;
+  border: none; }
+  .button-success:hover, input[type=submit].button-success:hover, input[type=reset].button-success:hover, .button-success:focus, input[type=submit].button-success:focus, input[type=reset].button-success:focus {
+    background-color: #29b765; }
+
+.button-error, input[type=submit].button-error, input[type=reset].button-error {
+  background-color: #e74c3c;
+  border: none; }
+  .button-error:hover, input[type=submit].button-error:hover, input[type=reset].button-error:hover, .button-error:focus, input[type=submit].button-error:focus, input[type=reset].button-error:focus {
+    background-color: #cf4436; }
+
+.button-warning, input[type=submit].button-warning, input[type=reset].button-warning {
+  background-color: #f39c12;
+  border: none; }
+  .button-warning:hover, input[type=submit].button-warning:hover, input[type=reset].button-warning:hover, .button-warning:focus, input[type=submit].button-warning:focus, input[type=reset].button-warning:focus {
+    background-color: #da8c10; }
+
+.button-info, input[type=submit].button-info, input[type=reset].button-info {
+  background-color: #2980b9;
+  border: none; }
+  .button-info:hover, input[type=submit].button-info:hover, input[type=reset].button-info:hover, .button-info:focus, input[type=submit].button-info:focus, input[type=reset].button-info:focus {
+    background-color: #2473a6; }
+
+/*======================================
+=            Size Modifiers            =
+======================================*/
+.button-large {
+  font-size: 1.2em; }
+
+.button-small {
+  font-size: 0.8em; }
+
+input[type="search"] {
   box-sizing: border-box; }
 
-section {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3em 0; }
+html {
+  box-sizing: border-box; }
 
-section:after {
-  content: " ";
-  display: block;
-  clear: both; }
+*, *:before, *:after {
+  box-sizing: inherit; }
 
-.contain, .about, .download {
-  max-width: 500px;
+.container {
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
-.contain:after, .about:after, .download:after {
-  content: " ";
-  display: block;
-  clear: both; }
-
-.half {
-  width: 49.15254%;
+.span-half {
+  width: 44.44444%;
   float: left;
-  margin-right: 1.69492%; }
+  margin-right: 11.11111%; }
+  .span-half:last-of-type {
+    width: 44.44444%;
+    float: right;
+    margin-right: 0; }
 
-.half:nth-of-type(2) {
-  width: 49.15254%;
-  float: right;
-  margin-right: 0; }
+.span-third {
+  width: 28.57143%;
+  float: left;
+  margin-right: 7.14286%; }
+  .span-third:last-of-type {
+    width: 28.57143%;
+    float: right;
+    margin-right: 0; }
 
-h2.demo {
+.section-header {
   text-transform: uppercase;
-  font-size: 2em;
-  margin-bottom: 3em;
-  position: relative;
-  color: #797979; }
+  font-size: 1.953em;
+  border-bottom: 3px solid #e74c3c;
+  padding: 0 0 0.375em 0;
+  margin: 0 0 0.75em 0;
+  color: #e74c3c; }
 
-h2.demo:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100px;
-  height: 5px;
-  background: #e5e5e5;
-  bottom: -0.75em; }
-
-h3.demo {
-  font-size: 1.5em;
-  text-transform: uppercase; }
-
-hr.large {
-  margin: 6em 0; }
-
-.hero {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em 0;
-  padding-top: 100px; }
-
-.hero:after {
-  content: " ";
-  display: block;
-  clear: both; }
-
-.hero h1 {
-  margin-bottom: 1.5em;
-  position: relative; }
-
-.hero h1:after {
-  position: absolute;
-  bottom: -0.75em;
-  content: "";
-  display: block;
-  width: 100px;
-  height: 5px;
-  background: #e74c3c; }
-
-.subheading {
-  font-size: 2em;
-  margin-bottom: 0;
-  line-height: 1.2; }
-
-.download {
-  text-align: center; }
-
-.download .button {
-  display: block;
-  margin: 3em 0; }
-
-.medium-wrap {
-  background: #f2f2f2;
-  padding: 6em 0;
-  margin: 6em 0; }
-
-.colors-list li {
-  display: block;
-  float: left;
-  width: 25%;
-  height: 100px;
-  line-height: 160px;
-  text-align: right;
-  padding-right: 20px;
-  color: #ffffff;
-  font-family: sans-serif; }
-
-.colors-list .primary {
-  background-color: #e74c3c; }
-
-.colors-list .secondary {
-  background-color: #2980b9; }
-
-.colors-list .dark {
-  background-color: #212121; }
-
-.colors-list .light {
-  background-color: #ffffff;
-  color: #212121; }
-
-.colors-list .success {
-  background-color: #2ecc71; }
-
-.colors-list .error {
-  background-color: #e74c3c; }
-
-.colors-list .warning {
-  background-color: #f39c12; }
-
-.colors-list .info {
-  background-color: #2980b9; }
-
-footer {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-bottom: 4.5em; }
-
-footer:after {
-  content: " ";
-  display: block;
-  clear: both; }
-
-nav {
-  display: block;
-  width: 100%;
-  position: fixed;
-  left: 50%;
-  margin: 0 0 0 -50%;
-  text-align: center;
-  z-index: 5;
-  background: #fff; }
-
-/*# sourceMappingURL=main.css.map */
-
-/*# sourceMappingURL=main.css.map */
+.section-header-sub {
+  text-transform: uppercase;
+  font-family: 'Droid Sans', sans-serif;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  background: #f7f7f7;
+  border-left: 3px solid #2980b9; }

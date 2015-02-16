@@ -2,7 +2,7 @@
 =            Font Imports            =
 ====================================*/
 
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ovo|Muli:300,400,400italic,300italic);
 
 /*==============================
 =            Colors            =
@@ -24,8 +24,8 @@ $color-border: shade($color-light, 10%);
 =            Typography            =
 ==================================*/
 
-$font-family-primary: 'Droid Serif', serif;
-$font-family-secondary: 'Droid Sans', sans-serif;
+$font-family-primary: 'Muli', sans-serif;
+$font-family-secondary: 'Ovo', serif;
 
 $font-family-body: $font-family-primary;
 $font-family-heading: $font-family-secondary;

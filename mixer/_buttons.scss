@@ -22,6 +22,7 @@ button,
     &:focus {
     	outline: none;
     	background-color: $color-border;
+    	color: $color-dark;
     }
 
     &:disabled {

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ovo|Muli:300,400,400italic,300italic);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic|Open+Sans:400italic,600italic,400,600);
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -181,7 +181,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Gentium Basic', serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -189,7 +189,7 @@ body {
 =            Headings            =
 ================================*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ovo', serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
   font-weight: 400;
@@ -242,12 +242,12 @@ blockquote {
 =            Code & Pre            =
 ==================================*/
 code, pre {
-  background: #e5e5e5; }
+  background: #e5e5e5;
+  border-radius: 3px; }
 
 pre {
   margin: 1.5em 0;
-  padding: 0.75em 1.5em;
-  border-radius: 3px; }
+  padding: 0.75em 1.5em; }
 
 /*==========================
 =            hr            =
@@ -263,6 +263,14 @@ ul, ol {
   padding: 0; }
   ul ul, ul ol, ol ul, ol ol {
     margin: 0 0 0 1.5em; }
+
+nav ul > li {
+  display: inline-block;
+  margin: 0 1.5em; }
+  nav ul > li:first-child {
+    margin-left: 0; }
+  nav ul > li:last-child {
+    margin-right: 0; }
 
 dl {
   margin: 1.5em 0; }
@@ -304,7 +312,7 @@ caption {
 =            Form            =
 ============================*/
 form {
-  font-family: 'Muli', sans-serif; }
+  font-family: 'Gentium Basic', serif; }
 
 /*================================
 =            Fieldset            =
@@ -390,7 +398,7 @@ button, .button, input[type=submit], input[type=reset] {
   border: 1px solid #e5e5e5;
   padding: 0.75em;
   border-radius: 3px;
-  font-family: 'Ovo', serif; }
+  font-family: 'Open Sans', sans-serif; }
   button:hover, button:focus, .button:hover, input[type=submit]:hover, input[type=reset]:hover, .button:focus, input[type=submit]:focus, input[type=reset]:focus {
     outline: none;
     background-color: #e5e5e5;
@@ -435,6 +443,9 @@ button, .button, input[type=submit], input[type=reset] {
 .button-small {
   font-size: 0.8em; }
 
+/*===========================================================
+=            Shame: Hacks that need to be fixed!            =
+===========================================================*/
 input[type="search"] {
   box-sizing: border-box; }
 
@@ -488,7 +499,7 @@ header {
     text-transform: lowercase;
     font-size: 3.051em;
     font-weight: bold;
-    color: #2ecc71; }
+    color: #e74c3c; }
   header .button, header input[type=submit], header input[type=reset] {
     margin: 1.5em 0.75em; }
 
@@ -498,21 +509,33 @@ p.intro {
   margin: 0 auto;
   color: #797979; }
   p.intro span {
-    color: #2ecc71; }
+    color: #2980b9; }
+
+nav ul {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1.5em 0;
+  background: #f7f7f7;
+  margin: 0; }
+  nav ul a {
+    color: #212121;
+    padding: 1.5em 0; }
+    nav ul a:hover, nav ul a:active, nav ul a:focus, nav ul a .active {
+      color: #e74c3c; }
 
 .section-header {
   text-align: center;
   text-transform: lowercase;
   font-size: 3.051em;
   padding: 1.5em;
-  background: #2ecc71;
+  background: #e74c3c;
   color: #ffffff;
   margin: 0; }
 
 .section-header-sub {
   text-align: center;
   text-transform: lowercase;
-  font-family: 'Ovo', serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 1.5em;
   background: #f7f7f7;
   margin: 1.5em 0;

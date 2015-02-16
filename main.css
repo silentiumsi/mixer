@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ovo|Muli:300,400,400italic,300italic);
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -181,7 +181,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -189,7 +189,7 @@ body {
 =            Headings            =
 ================================*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Ovo', serif;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
   font-weight: 400;
@@ -304,7 +304,7 @@ caption {
 =            Form            =
 ============================*/
 form {
-  font-family: 'Droid Sans', sans-serif; }
+  font-family: 'Muli', sans-serif; }
 
 /*================================
 =            Fieldset            =
@@ -390,10 +390,11 @@ button, .button, input[type=submit], input[type=reset] {
   border: 1px solid #e5e5e5;
   padding: 0.75em;
   border-radius: 3px;
-  font-family: 'Droid Sans', sans-serif; }
+  font-family: 'Ovo', serif; }
   button:hover, button:focus, .button:hover, input[type=submit]:hover, input[type=reset]:hover, .button:focus, input[type=submit]:focus, input[type=reset]:focus {
     outline: none;
-    background-color: #e5e5e5; }
+    background-color: #e5e5e5;
+    color: #212121; }
   button:disabled, .button:disabled, input[type=submit]:disabled, input[type=reset]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
@@ -443,10 +444,20 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.container-full {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container-full:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 .container {
   max-width: 800px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin: 6em auto; }
   .container:after {
     content: " ";
     display: block;
@@ -470,18 +481,42 @@ html {
     float: right;
     margin-right: 0; }
 
+header {
+  padding: 3em;
+  text-align: center; }
+  header h1 {
+    text-transform: lowercase;
+    font-size: 3.051em;
+    font-weight: bold;
+    color: #2ecc71; }
+  header .button, header input[type=submit], header input[type=reset] {
+    margin: 1.5em 0.75em; }
+
+p.intro {
+  font-size: 1.4em;
+  width: 500px;
+  margin: 0 auto;
+  color: #797979; }
+  p.intro span {
+    color: #2ecc71; }
+
 .section-header {
-  text-transform: uppercase;
-  font-size: 1.953em;
-  border-bottom: 3px solid #e74c3c;
-  padding: 0 0 0.375em 0;
-  margin: 0 0 0.75em 0;
-  color: #e74c3c; }
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 3.051em;
+  padding: 1.5em;
+  background: #2ecc71;
+  color: #ffffff;
+  margin: 0; }
 
 .section-header-sub {
-  text-transform: uppercase;
-  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: 'Ovo', serif;
   padding: 1.5em;
-  margin: 1.5em 0;
   background: #f7f7f7;
-  border-left: 3px solid #2980b9; }
+  margin: 1.5em 0;
+  font-size: 1.953em; }
+
+.section-header + .section-header-sub {
+  margin-top: 0; }

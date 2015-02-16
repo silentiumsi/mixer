@@ -1,20 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic);
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block; }
 
 audio:not([controls]) {
@@ -30,11 +18,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
   font-family: sans-serif; }
 
 body {
@@ -74,8 +58,7 @@ h6 {
 abbr[title] {
   border-bottom: 1px dotted; }
 
-b,
-strong {
+b, strong {
   font-weight: bold; }
 
 dfn {
@@ -85,10 +68,7 @@ mark {
   background: #ff0;
   color: #000; }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
@@ -107,8 +87,7 @@ q:before, q:after {
 small {
   font-size: 80%; }
 
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -139,10 +118,7 @@ legend {
   padding: 0;
   white-space: normal; }
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
@@ -151,19 +127,14 @@ textarea {
 button, input {
   line-height: normal; }
 
-button,
-select {
+button, select {
   text-transform: none; }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-button[disabled],
-input[disabled] {
+button[disabled], input[disabled] {
   cursor: default; }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
@@ -189,40 +160,56 @@ input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
+/*====================================
+=            Font Imports            =
+====================================*/
+/*==============================
+=            Colors            =
+==============================*/
+/*==================================
+=            Typography            =
+==================================*/
+/*===================================
+=            Base Sizing            =
+===================================*/
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
   -moz-font-feature-settings: "kern", "liga", "pnum";
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  font-family: "Droid Serif", serif;
+  font-family: 'Droid Serif', serif;
   font-size: 1em;
   line-height: 1.5;
   color: #212121; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   line-height: 1.2;
   margin: 0 0 0.75em 0;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  font-weight: 400; }
 
 h1 {
-  font-size: 3.5em; }
+  font-size: 3.051em; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 2.441em; }
 
 h3 {
-  font-size: 2.5em; }
+  font-size: 1.953em; }
 
 h4 {
-  font-size: 2em; }
+  font-size: 1.563em; }
 
 h5 {
-  font-size: 1.5em; }
+  font-size: 1.25em; }
 
 h6 {
   font-size: 1em; }
+
+.subheader {
+  color: #797979; }
 
 p {
   margin: 0.75em 0; }
@@ -261,8 +248,7 @@ cite {
     content: "\2014";
     margin-right: 0.75em; }
 
-img,
-picture {
+img, picture {
   margin: 0;
   max-width: 100%; }
 
@@ -305,9 +291,7 @@ td {
   padding: 0.75em;
   border: 1px solid #e5e5e5; }
 
-tr,
-td,
-th {
+tr, td, th {
   vertical-align: middle; }
 
 caption {
@@ -322,7 +306,7 @@ caption {
 =            Form            =
 ============================*/
 form {
-  font-family: "Droid Sans", sans-serif; }
+  font-family: 'Droid Sans', sans-serif; }
 
 /*================================
 =            Fieldset            =
@@ -390,17 +374,13 @@ textarea {
 /*===============================
 =            Buttons            =
 ===============================*/
-input[type=submit],
-input[type=reset] {
+input[type=submit], input[type=reset] {
   width: 100%; }
 
 /*===================================
 =            Base Button            =
 ===================================*/
-button,
-.button,
-input[type=submit],
-input[type=reset] {
+button, .button, input[type=submit], input[type=reset] {
   display: inline-block;
   line-height: 1;
   font-weight: 400;
@@ -412,60 +392,39 @@ input[type=reset] {
   border: 1px solid #e5e5e5;
   padding: 0.75em;
   border-radius: 3px;
-  font-family: "Droid Sans", sans-serif; }
-  button:hover, button:focus,
-  .button:hover,
-  input[type=submit]:hover,
-  input[type=reset]:hover,
-  .button:focus,
-  input[type=submit]:focus,
-  input[type=reset]:focus {
+  font-family: 'Droid Sans', sans-serif; }
+  button:hover, button:focus, .button:hover, input[type=submit]:hover, input[type=reset]:hover, .button:focus, input[type=submit]:focus, input[type=reset]:focus {
     outline: none;
     background-color: #e5e5e5; }
-  button:disabled,
-  .button:disabled,
-  input[type=submit]:disabled,
-  input[type=reset]:disabled {
+  button:disabled, .button:disabled, input[type=submit]:disabled, input[type=reset]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
 /*=======================================
 =            Color Modifiers            =
 =======================================*/
-.button-success, input[type=submit].button-success,
-input[type=reset].button-success {
+.button-success, input[type=submit].button-success, input[type=reset].button-success {
   background-color: #2ecc71;
   border: none; }
-  .button-success:hover, input[type=submit].button-success:hover,
-  input[type=reset].button-success:hover, .button-success:focus, input[type=submit].button-success:focus,
-  input[type=reset].button-success:focus {
+  .button-success:hover, input[type=submit].button-success:hover, input[type=reset].button-success:hover, .button-success:focus, input[type=submit].button-success:focus, input[type=reset].button-success:focus {
     background-color: #29b765; }
 
-.button-error, input[type=submit].button-error,
-input[type=reset].button-error {
+.button-error, input[type=submit].button-error, input[type=reset].button-error {
   background-color: #e74c3c;
   border: none; }
-  .button-error:hover, input[type=submit].button-error:hover,
-  input[type=reset].button-error:hover, .button-error:focus, input[type=submit].button-error:focus,
-  input[type=reset].button-error:focus {
+  .button-error:hover, input[type=submit].button-error:hover, input[type=reset].button-error:hover, .button-error:focus, input[type=submit].button-error:focus, input[type=reset].button-error:focus {
     background-color: #cf4436; }
 
-.button-warning, input[type=submit].button-warning,
-input[type=reset].button-warning {
+.button-warning, input[type=submit].button-warning, input[type=reset].button-warning {
   background-color: #f39c12;
   border: none; }
-  .button-warning:hover, input[type=submit].button-warning:hover,
-  input[type=reset].button-warning:hover, .button-warning:focus, input[type=submit].button-warning:focus,
-  input[type=reset].button-warning:focus {
+  .button-warning:hover, input[type=submit].button-warning:hover, input[type=reset].button-warning:hover, .button-warning:focus, input[type=submit].button-warning:focus, input[type=reset].button-warning:focus {
     background-color: #da8c10; }
 
-.button-info, input[type=submit].button-info,
-input[type=reset].button-info {
+.button-info, input[type=submit].button-info, input[type=reset].button-info {
   background-color: #2980b9;
   border: none; }
-  .button-info:hover, input[type=submit].button-info:hover,
-  input[type=reset].button-info:hover, .button-info:focus, input[type=submit].button-info:focus,
-  input[type=reset].button-info:focus {
+  .button-info:hover, input[type=submit].button-info:hover, input[type=reset].button-info:hover, .button-info:focus, input[type=submit].button-info:focus, input[type=reset].button-info:focus {
     background-color: #2473a6; }
 
 /*======================================
@@ -515,7 +474,7 @@ html {
 
 .section-header {
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 1.953em;
   border-bottom: 3px solid #e74c3c;
   padding: 0 0 0.375em 0;
   margin: 0 0 0.75em 0;
@@ -523,17 +482,8 @@ html {
 
 .section-header-sub {
   text-transform: uppercase;
-  font-family: "Droid Sans", sans-serif;
-  padding: 0 0 0.375em 0;
-  margin: 0 0 3em 0;
-  position: relative; }
-  .section-header-sub:after {
-    content: "";
-    display: block;
-    width: 50px;
-    border-bottom: 3px solid #212121;
-    position: absolute;
-    bottom: -0.75em;
-    left: 0; }
-
-/*# sourceMappingURL=main.css.map */
+  font-family: 'Droid Sans', sans-serif;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  background: #f7f7f7;
+  border-left: 3px solid #2980b9; }

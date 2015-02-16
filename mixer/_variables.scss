@@ -1,6 +1,13 @@
+/*====================================
+=            Font Imports            =
+====================================*/
+
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic);
 
-// Colors
+/*==============================
+=            Colors            =
+==============================*/
+
 $color-primary: #e74c3c;
 $color-secondary: #2980b9;
 $color-dark: #212121;
@@ -13,7 +20,10 @@ $color-info: #2980b9;
 
 $color-border: shade($color-light, 10%);
 
-// Typography
+/*==================================
+=            Typography            =
+==================================*/
+
 $font-family-primary: 'Droid Serif', serif;
 $font-family-secondary: 'Droid Sans', sans-serif;
 
@@ -27,13 +37,18 @@ $base-font-size: 1em;
 $base-line-height: 1.5;
 $base-heading-line-height: 1.2;
 
-$h1-font-size: $base-font-size * 3.5;
-$h2-font-size: $base-font-size * 3;
-$h3-font-size: $base-font-size * 2.5;
-$h4-font-size: $base-font-size * 2;
-$h5-font-size: $base-font-size * 1.5;
+$base-heading-weight: 400;
+
+$h1-font-size: $base-font-size * 3.051;
+$h2-font-size: $base-font-size * 2.441;
+$h3-font-size: $base-font-size * 1.953;
+$h4-font-size: $base-font-size * 1.563;
+$h5-font-size: $base-font-size * 1.25;
 $h6-font-size: $base-font-size;
 
-// Sizing
+/*===================================
+=            Base Sizing            =
+===================================*/
+
 $base-spacing: 1.5em;
 $base-border-radius: 3px;

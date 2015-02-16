@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 $base-spacing / 2 0;
     text-rendering: optimizeLegibility;
     // Fix the character spacing for headings
+    font-weight: $base-heading-weight;
 }
 
 h1 {
@@ -37,6 +38,10 @@ h5 {
 
 h6 {
     font-size: $h6-font-size;
+}
+
+.subheader {
+    color: tint($color-dark, 40%);
 }
 
 p {

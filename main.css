@@ -172,6 +172,9 @@ input[type="checkbox"], input[type="radio"] {
 /*===================================
 =            Base Sizing            =
 ===================================*/
+/*============================
+=            Base            =
+============================*/
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
   -moz-font-feature-settings: "kern", "liga", "pnum";
@@ -180,15 +183,17 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Droid Serif', serif;
   font-size: 1em;
-  line-height: 1.5;
-  color: #212121; }
+  line-height: 1.5; }
 
+/*================================
+=            Headings            =
+================================*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Droid Sans', sans-serif;
   line-height: 1.2;
-  margin: 0 0 0.75em 0;
   text-rendering: optimizeLegibility;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0.3em 0 0.75em 0; }
 
 h1 {
   font-size: 3.051em; }
@@ -208,57 +213,50 @@ h5 {
 h6 {
   font-size: 1em; }
 
-.subheader {
-  color: #797979; }
-
-p {
-  margin: 0.75em 0; }
-
+/*==============================
+=            Anchor            =
+==============================*/
 a {
-  color: #e74c3c;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #e74c3c; }
   a:hover, a:active, a:focus {
+    outline: none;
     color: #b83c30; }
-  a:active, a:focus {
-    outline: none; }
 
-hr {
-  border: none;
-  height: 1px;
-  background: #e5e5e5;
-  margin: 1.5em 0; }
-
+/*=========================================
+=            Blockquote & Cite            =
+=========================================*/
 blockquote {
-  border-left: 3px solid #cccccc;
-  color: #636363;
   margin: 1.5em 0;
-  padding-left: 1.5em; }
+  color: #636363;
+  padding: 0.75em 0 0.75em 1.5em;
+  border-left: 3px solid #e5e5e5; }
   blockquote cite {
     display: block;
     font-style: italic; }
     blockquote cite:before {
       content: "\2014";
-      margin-right: 0.75em; }
+      margin: 0 0.75em 0 0; }
 
-cite {
-  color: #585858;
-  font-style: italic;
-  display: block; }
-  cite:before {
-    content: "\2014";
-    margin-right: 0.75em; }
-
-img, picture {
-  margin: 0;
-  max-width: 100%; }
-
+/*==================================
+=            Code & Pre            =
+==================================*/
 code, pre {
   background: #e5e5e5; }
 
 pre {
   margin: 1.5em 0;
-  padding-left: 1.5em;
+  padding: 0.75em 1.5em;
   border-radius: 3px; }
+
+/*==========================
+=            hr            =
+==========================*/
+hr {
+  border: none;
+  height: 1px;
+  background: #e5e5e5;
+  margin: 1.5em 0; }
 
 ul, ol {
   margin: 1.5em 0;

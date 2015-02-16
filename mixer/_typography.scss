@@ -92,12 +92,12 @@ blockquote {
 
 code, pre {
 	background: $color-border;
+	border-radius: $base-border-radius;
 }
 
 pre {
 	margin: $base-spacing 0;
 	padding: ($base-spacing / 2) $base-spacing;
-	border-radius: $base-border-radius;
 }
 
 /*==========================

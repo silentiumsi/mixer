@@ -4,12 +4,20 @@ var gulp = require('gulp'),
 	del = require('del'),
 	connect = require('gulp-connect'),
 	deploy = require('gulp-gh-pages'),
-	plumber = require('gulp-plumber');
+	plumber = require('gulp-plumber'),
+	autoprefixer = require('gulp-autoprefixer'),
+	uncss = require('gulp-uncss'),
+	csso = require('gulp-csso');
 
-gulp.task('css', function () {
+gulp.task('css', ['html'], function () {
 	gulp.src('src/main.scss')
 		.pipe(plumber())
 		.pipe(sass())
+		.pipe(uncss({
+			html: ['dest/index.html']
+		}))
+		.pipe(autoprefixer())
+		.pipe(csso())
 		.pipe(gulp.dest('dest'));
 });
 

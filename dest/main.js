@@ -1,0 +1,1 @@
+function stickyNav(o){var s=$(o),c=s.offset().top;$(window).scroll(function(){var o=$(window).scrollTop();o>c?s.addClass("sticky"):s.removeClass("sticky")})}$(function(){stickyNav("nav")});

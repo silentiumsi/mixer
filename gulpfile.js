@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	autoprefixer = require('gulp-autoprefixer'),
 	uncss = require('gulp-uncss'),
-	csso = require('gulp-csso');
+	csso = require('gulp-csso'),
+	uglify = require('gulp-uglify');
 
 gulp.task('css:dev', ['html'], function () {
 	gulp.src('src/main.scss')
@@ -38,6 +39,12 @@ gulp.task('html', function () {
 		.pipe(gulp.dest('dest'));
 });
 
+gulp.task('js', function () {
+	gulp.src('src/main.js')
+		.pipe(uglify())
+		.pipe(gulp.dest('dest'));
+});
+
 gulp.task('clean', function () {
 	del(['dest']);
 });
@@ -55,9 +62,9 @@ gulp.task('deploy', function () {
 })
 
 gulp.task('watch', function () {
-	gulp.watch(['**/*.scss', '**/*.html'], ['css:dev', 'html']);
+	gulp.watch(['**/*.scss', '**/*.html'], ['css:dev', 'html', 'js']);
 });
 
 gulp.task('default', ['dev']);
-gulp.task('dev', ['clean', 'html', 'css:dev', 'serve', 'watch']);
-gulp.task('prod', ['clean', 'html', 'css:prod']);
+gulp.task('dev', ['clean', 'html', 'css:dev', 'js', 'serve', 'watch']);
+gulp.task('prod', ['clean', 'html', 'css:prod', 'js']);

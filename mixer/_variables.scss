@@ -19,6 +19,7 @@ $color-warning: #f39c12;
 $color-info: #2980b9;
 
 $color-border: shade($color-light, 10%);
+$color-border-light: tint($color-border, 60%);
 
 /*==================================
 =            Typography            =

@@ -291,6 +291,9 @@ nav ul > li, ul.inline > li {
   nav ul > li:last-of-type, ul.inline > li:last-of-type {
     margin-right: 0; }
 
+/*==============================
+=            Tables            =
+==============================*/
 table {
   border-collapse: collapse;
   margin: 1.5em 0;
@@ -314,10 +317,10 @@ tr, td, th {
 caption {
   font-weight: bold;
   padding: 0.75em;
-  text-align: left;
-  background: #f4f4f4;
+  text-align: center;
   border: 1px solid #e5e5e5;
-  border-bottom: none; }
+  border-bottom: none;
+  background: #ffffff; }
 
 /*============================
 =            Form            =

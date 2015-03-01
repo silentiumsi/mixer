@@ -2,7 +2,7 @@
 =            Font Imports            =
 ====================================*/
 
-@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic|Open+Sans:400italic,600italic,400,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
 
 /*==============================
 =            Colors            =
@@ -25,31 +25,33 @@ $color-border-light: tint($color-border, 60%);
 =            Typography            =
 ==================================*/
 
-$font-family-primary: 'Gentium Basic', serif;
-$font-family-secondary: 'Open Sans', sans-serif;
+$font-family-primary: 'Open Sans', sans-serif;
 
 $font-family-body: $font-family-primary;
-$font-family-heading: $font-family-secondary;
+$font-family-heading: $font-family-primary;
 
 $color-font-base: $color-dark;
 $color-font-link: $color-primary;
 
-$base-font-size: 1em;
-$base-line-height: 1.5;
-$base-heading-line-height: 1.2;
+$modular-scale-base: em(16px);
+$modular-scale-ratio: $major-third;
+
+$base-font-size: modular-scale(0);
+$base-line-height: modular-scale(2);
+$base-heading-line-height: modular-scale(1);
 
 $base-heading-weight: 400;
 
-$h1-font-size: $base-font-size * 3.051;
-$h2-font-size: $base-font-size * 2.441;
-$h3-font-size: $base-font-size * 1.953;
-$h4-font-size: $base-font-size * 1.563;
-$h5-font-size: $base-font-size * 1.25;
-$h6-font-size: $base-font-size;
+$h1-font-size: modular-scale(5);
+$h2-font-size: modular-scale(4);
+$h3-font-size: modular-scale(3);
+$h4-font-size: modular-scale(2);
+$h5-font-size: modular-scale(1);
+$h6-font-size: modular-scale(0);
 
 /*===================================
 =            Base Sizing            =
 ===================================*/
 
-$base-spacing: 1.5em;
+$base-spacing: modular-scale(2);
 $base-border-radius: 3px;

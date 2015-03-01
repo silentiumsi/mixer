@@ -16,7 +16,6 @@ button,
     border: 1px solid $color-border;
     padding: ($base-spacing / 2);
     border-radius: $base-border-radius;
-    font-family: $font-family-secondary;
 
     &:hover, 
     &:focus {
@@ -80,9 +79,9 @@ button,
 ======================================*/
 
 .button-large {
-	font-size: 1.2em;
+	padding: $base-spacing;
 }
 
 .button-small {
-	font-size: 0.8em;
+	padding: ($base-spacing / 4);
 }

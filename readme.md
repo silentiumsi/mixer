@@ -1,3 +1,5 @@
+**DEPRECATED**: This project is no longer maintained or used by me.
+
 # Mixer
 ##what?
 My own personal launchpad for a quick and structured beginning to Sass projects depending on Bourbon.
